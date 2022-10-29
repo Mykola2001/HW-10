@@ -1,6 +1,15 @@
+"use strict";
 
-let person = prompt("What is your name?")
+function min(a, b) {
+    return a < b ? a : b;
+  }
 
-let pitch = person[0].toUpperCase() + person.slice(1).toLowerCase()
+let a = prompt("To calculate which number is lower write first number here");
 
-alert(`Hi, ${pitch}`)
+a = Number(a)
+
+let b = prompt("and here");
+
+b = Number(b)
+
+alert( min(a, b) );
